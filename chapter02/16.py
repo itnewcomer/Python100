@@ -7,7 +7,6 @@ import sys
 
 print("16. ファイルをN分割する")
 
-import sys
 # ファイルの読み込み
 f = open(sys.argv[1], 'r').readlines()
 #　ファイルの行数の確認
