@@ -1,6 +1,8 @@
 ## 16. ファイルをN分割する
 ## 自然数Nをコマンドライン引数などの手段で受け取り，入力のファイルを行単位でN分割せよ．同様の処理をsplitコマンドで実現せよ．
 
+# python 16.py hightemp.txt 7
+
 import sys
 
 print("16. ファイルをN分割する")
@@ -17,7 +19,7 @@ line_num = int(sys.argv[2])
 file_num = 1
 # 末尾N行出力
 for i in range(0,len(f),line_num):
-    file_name = 'chap_2_16_python_'+str(file_num)
+    file_name = 'output/chap_2_16_python_'+str(file_num)
     fnew = open (file_name, 'w')
     for x in f[i:i+line_num]:
         fnew.write(str(x))
